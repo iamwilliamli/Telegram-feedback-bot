@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
 
-from command_replies import Replies
-
 TG_TOKEN = "YOUR TOKEN HERE"
 PROXY = None
 CHAT_ID = -100125 # The chat group or individual chat id of forwarded message destination
