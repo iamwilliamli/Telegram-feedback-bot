@@ -34,8 +34,11 @@ def getusername(update, context, reply=False):
                 username = user['first_name']+' '+ user['last_name']
         else:
             username = "@"+username
-    else:
-        username = user['first_name']
+    if reply == True:
+        if user['last_name'] == None:
+                username = user['first_name']
+            else:
+                username = user['first_name']+' '+ user['last_name']
     return username
 
 def write_json(data, filename=USER_JSON): 
